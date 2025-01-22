@@ -24,7 +24,7 @@ print()
 print("Welcome to Treasure Island!")
 print("Your mission is to find the treasure!")
 
-fd1 = input('You are at a crossroad now! Which direction you are going to take! ("Left" or "Right") : ').lower
+fd1 = input('You are at a crossroad now! Which direction you are going to take! ("Left" or "Right") : ').lower()
 
 if fd1 == "right" or fd1 == "r":
     print("Damn, You met up with Gorlock the Destroyer! You were Consumed!")
@@ -37,8 +37,19 @@ elif fd1 == "left" or fd1 == "l":
         print("Game Over!!!")
     elif fd2 == "wait" or fd2 == "w":
         print("Good Patience Fellow Adventurer! You just been picked up by the Titanic!")
-        
+        print("Now you have reached the island, and you seem to notice three \"Anywhere Door\" from \"Doraemon\". You see a red door and a green door!")
+        fd3 = input("Enter the door you are picking! ('Red' or 'Green' or 'Yellow')!").lower()
+        if fd3 == "red" or fd3 == "r":
+            print("You entered the room full of fire and gaseous release of Mr. Perfect AA! Game Over!")
+        elif fd3 == "green" or fd3 == "g":
+            print("You have entered the room of beasts, which are the children of gorlock! Game Over!")
+        elif fd3 == "yellow" or fd3 == "y":
+            print("You have found the treasure! You have Won !!!!!!!!!!!!!!!!")
+        else:
+            print("Invalid Entry!")
+
     else:
         print("Invalid Entry!")
+
 else:
     print("Invalid Entry!")
